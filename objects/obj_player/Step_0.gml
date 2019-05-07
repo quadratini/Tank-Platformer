@@ -16,7 +16,7 @@ if (vsp != 0 + grv) {
 }
 
 if (place_meeting(x,y+1,obj_wall)) && (key_jump) {
-	vsp = -8;
+	vsp = -15;
 }
 if (place_meeting(x,y+1,obj_bedrock)) && (key_jump) {
 	vsp = -8;

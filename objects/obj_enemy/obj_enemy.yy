@@ -81,7 +81,22 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "227ddfac-bc6f-4602-aefb-dec13fc46b3d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "hasGun",
+            "varType": 3
+        }
+    ],
     "solid": false,
     "spriteId": "e1903c63-0d0e-49ae-9612-5e5be85b3a8e",
     "visible": true

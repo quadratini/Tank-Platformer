@@ -5,19 +5,19 @@ y = obj_player.y;
 
 bdist = 5;
 
-image_angle = point_direction(x,y,mouse_x,mouse_y);
+image_angle = point_direction(x,y,mouse_x,mouse_y); 
 
 targetDirectionX = x - mouse_x;
 targetDirectionY = y - mouse_y;
-if (mouse_check_button(mb_left) && !audio_is_playing(sound_reload)) {
+if (mouse_check_button_pressed(mb_left) && !audio_is_playing(sound_reload)) {
 	audio_play_sound(sound_reload, 0, false);
+	reload = audio_sound_length(sound_reload) * 60 - 1;
 }
-if (mouse_check_button(mb_left)) {
-	reload -= 1;
-	if (reload < 0) {
-		reload = audio_sound_length(sound_reload) * 60;
+if (audio_is_playing(sound_reload)) {
+	reload--;
+	if (reload <= 0) {
 		with (instance_create_layer(x, y, "Bullets", obj_bullet)) {
-			speed = 21;
+			speed = 22;
 			direction = other.image_angle;
 			image_angle = direction;
 			xoffset = dcos(-direction) * other.bdist;
@@ -26,6 +26,14 @@ if (mouse_check_button(mb_left)) {
 			y += yoffset;
 			gravity = 0.7;
 			audio_play_sound(sound0,1,false);
+			other.reload = audio_sound_length(sound_reload) * 60 - 1;
+			
+			dir = point_direction(x,y,mouse_x,mouse_y);
+			obj_bullet.x = x;
+			obj_bullet.y = y;
+			draw_primitive_begin(pr_linelist);
+			draw_vertex_color(x,y,c_lime,1);
+			draw_primitive_end();
 		}
 	}
 }

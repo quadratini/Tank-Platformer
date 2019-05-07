@@ -273,8 +273,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Player",
-            "id": "bb1255cc-3c26-48d7-a5ea-1edaaf63d339",
+            "name": "Barrel",
+            "id": "1a7ecc29-697a-481e-bfb1-4d345311a19a",
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
@@ -285,8 +285,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_7AF4BE88","id": "75dfebc8-1ecd-4518-b42b-5899802fe3f9","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7AF4BE88","objId": "b1a0c2a5-e3d6-48a0-a9b1-321178f7e471","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 128,"y": 800},
-{"name": "inst_64EBC435","id": "40afba3d-b59f-4dc5-884d-167ae29c51c5","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_64EBC435","objId": "9db758c0-68b3-44a9-8a84-3297dfabd036","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 416,"y": 736}
+{"name": "inst_3791BA47","id": "60adb766-6c6a-4212-8d82-eefdb96f3f83","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3791BA47","objId": "3f7b91f9-dabb-4f31-8215-20711a43d2d6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 128,"y": 864}
             ],
             "layers": [
 
@@ -300,8 +299,8 @@
         },
         {
             "__type": "GMRInstanceLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Barrel",
-            "id": "1a7ecc29-697a-481e-bfb1-4d345311a19a",
+            "name": "Player",
+            "id": "bb1255cc-3c26-48d7-a5ea-1edaaf63d339",
             "depth": 200,
             "grid_x": 32,
             "grid_y": 32,
@@ -312,7 +311,8 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_3791BA47","id": "60adb766-6c6a-4212-8d82-eefdb96f3f83","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_3791BA47","objId": "3f7b91f9-dabb-4f31-8215-20711a43d2d6","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 128,"y": 864}
+{"name": "inst_7AF4BE88","id": "75dfebc8-1ecd-4518-b42b-5899802fe3f9","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_7AF4BE88","objId": "b1a0c2a5-e3d6-48a0-a9b1-321178f7e471","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 128,"y": 800},
+{"name": "inst_64EBC435","id": "40afba3d-b59f-4dc5-884d-167ae29c51c5","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_64EBC435","objId": "9db758c0-68b3-44a9-8a84-3297dfabd036","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 416,"y": 736}
             ],
             "layers": [
 
@@ -746,7 +746,7 @@
     ],
     "viewSettings":     {
         "id": "0d53d455-bcba-488f-8281-7e7c885d2990",
-        "clearDisplayBuffer": true,
+        "clearDisplayBuffer": false,
         "clearViewBackground": false,
         "enableViews": true,
         "inheritViewSettings": false,
