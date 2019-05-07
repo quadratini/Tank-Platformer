@@ -9,7 +9,7 @@ image_angle = point_direction(x,y,mouse_x,mouse_y);
 
 targetDirectionX = x - mouse_x;
 targetDirectionY = y - mouse_y;
-if (mouse_check_button_pressed(mb_left) && !audio_is_playing(sound_reload)) {
+if (mouse_check_button (mb_left) && !audio_is_playing(sound_reload)) {
 	audio_play_sound(sound_reload, 0, false);
 	reload = audio_sound_length(sound_reload) * 60 - 1;
 }
@@ -27,13 +27,6 @@ if (audio_is_playing(sound_reload)) {
 			gravity = 0.7;
 			audio_play_sound(sound0,1,false);
 			other.reload = audio_sound_length(sound_reload) * 60 - 1;
-			
-			dir = point_direction(x,y,mouse_x,mouse_y);
-			obj_bullet.x = x;
-			obj_bullet.y = y;
-			draw_primitive_begin(pr_linelist);
-			draw_vertex_color(x,y,c_lime,1);
-			draw_primitive_end();
 		}
 	}
 }

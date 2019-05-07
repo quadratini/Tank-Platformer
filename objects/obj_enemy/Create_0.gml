@@ -9,3 +9,12 @@ hit = false;
 hp = 2;
 image_speed = 0;
 image_index = 1;
+
+if (hasGun) {
+	mygun = instance_create_layer(x,y,"Barrel",obj_barrelE);
+	with (mygun) {
+		owner = other.id;
+	}
+} else {
+	mygun = noone;
+}

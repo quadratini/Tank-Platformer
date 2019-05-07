@@ -1,11 +1,18 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 if (hp <= 0) {
+	with (mygun) instance_destroy();
 	instance_destroy();
 	audio_play_sound(sound_explode, 1, false);
 }
 vsp = vsp + grv;
 
+// Doesn't walk of edges.
+if ((grounded) && (afraidofheights) && (!place_meeting(x + hsp, y + 1, obj_wall))) {
+	hsp = -hsp;
+}
+
+// Horizontal collision.
 if (place_meeting(x+hsp, y, obj_wall)) {
 	while (!place_meeting(x+sign(hsp), y, obj_wall)) {
 		x = x + sign(hsp);
@@ -33,6 +40,13 @@ if (place_meeting(x,y+vsp, obj_bedrock)) {
 	vsp = 0;
 }
 y = y + vsp; 
+
+if (!place_meeting(x, y + 1, obj_wall)) {
+	grounded = false;
+} else {
+	grounded = true;
+}
+	
 
 /*if (!place_meeting(x,y+1,obj_wall)) {
 	sprite_index = spr_enemy;

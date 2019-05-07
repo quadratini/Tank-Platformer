@@ -25,16 +25,6 @@
             "m_owner": "de50dfad-496e-42a8-92be-1b514bcd5054"
         },
         {
-            "id": "496766f0-ba47-4eb0-9899-e7755235bf4e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "de50dfad-496e-42a8-92be-1b514bcd5054"
-        },
-        {
             "id": "56f1a8ca-b1a0-448c-8dcf-ab39a518a4df",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -82,6 +72,34 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
+        {
+            "id": "40fb9d71-bb4d-4c2d-ac4d-4c378db83b2b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "afraidofheights",
+            "varType": 3
+        },
+        {
+            "id": "b629b6fe-116b-4ab9-b88a-32fb07332972",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "grounded",
+            "varType": 3
+        },
         {
             "id": "227ddfac-bc6f-4602-aefb-dec13fc46b3d",
             "modelName": "GMObjectProperty",

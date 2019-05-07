@@ -1,5 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (hp <= 0) {
+	with (obj_barrel) {
+		instance_destroy();
+	}
+	instance_destroy();
+}
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
@@ -7,16 +13,16 @@ key_jump = keyboard_check_pressed(vk_space);
 var move = key_right - key_left;
 
 hsp = move * walksp;
-vsp = vsp + grv;
+vsp = vsp + grv;  
 
-if (vsp != 0 + grv) {
+if (!place_meeting(x, y + 1, obj_wall) && !place_meeting(x, y + 1, obj_bedrock)) {
 	sprite_index = spr_playerj;
 } else {
 	sprite_index = spr_player1;
 }
 
 if (place_meeting(x,y+1,obj_wall)) && (key_jump) {
-	vsp = -15;
+	vsp = -8;
 }
 if (place_meeting(x,y+1,obj_bedrock)) && (key_jump) {
 	vsp = -8;

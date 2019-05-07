@@ -3,4 +3,6 @@
 hsp = 0;
 vsp = 0;
 grv = 0.4;
-walksp = 20;
+walksp = 3;
+hp = 5;
+hit = false;
